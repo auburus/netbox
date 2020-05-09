@@ -5,7 +5,7 @@ include(CTest)
 enable_testing()
 add_subdirectory(tests)
 
-add_library(netbox src/netbox.cpp)
+add_library(netbox STATIC src/netbox.cpp)
 
 target_include_directories(
   netbox

@@ -33,6 +33,6 @@ if(CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 add_executable(netboxtest netbox_test.cpp)
-target_link_libraries(netboxtest netbox gtest_main)
+target_link_libraries(netboxtest PUBLIC netbox gtest_main)
 
 add_test(NAME netboxtest COMMAND netboxtest)
