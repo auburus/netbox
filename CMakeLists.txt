@@ -44,6 +44,3 @@ target_compile_options(
           -Wmissing-braces)
 
 target_compile_features(netbox PUBLIC cxx_std_17)
-
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/external/GSL)
-target_link_libraries(netbox PRIVATE Microsoft.GSL::GSL)
